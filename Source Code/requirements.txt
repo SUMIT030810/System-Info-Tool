@@ -1,0 +1,99 @@
+=============================================
+🖥 SYSTEM INFO TOOL - REQUIREMENTS & USER GUIDE
+=============================================
+
+📅 Date: [03-03-2025]
+🔹 Version: 1.0.0
+🔹 Author: [SUMIT RAJAK]
+🔹 Project Repository: https://github.com/SUMIT030810/System-Info-Tool
+
+=============================================
+📌 SYSTEM REQUIREMENTS
+=============================================
+✅ **Operating System**: Windows 7, 10, 11  
+✅ **Processor**: Intel i3 or higher  
+✅ **RAM**: 4GB or more  
+✅ **Storage**: At least 50MB free disk space  
+✅ **Software Requirements**:  
+   - Python 3.8+ (Required only for GUI version)  
+   - PowerShell (Pre-installed in Windows)  
+   - Batch script execution (Command Prompt required)  
+
+=============================================
+📌 DOWNLOAD & INSTALLATION GUIDE
+=============================================
+
+🔹 **OPTION 1: Running the Batch Script (`system_info.bat`)**
+---------------------------------------------
+1️⃣ **Download the Project from GitHub**  
+   - Visit: 🔗 https://github.com/SUMIT030810/System-Info-Tool
+   - Click **"Code"** → **Download ZIP**  
+   - Extract the ZIP file to any folder.  
+
+2️⃣ **Navigate to the `src/` folder**  
+3️⃣ **Right-click `system_info.bat` → Run as Administrator**  
+4️⃣ **The system report will be saved to `C:\system_info.txt`**
+
+✅ **No additional software is required!**
+
+🔹 **OPTION 2: Running the GUI Python Version (`system_info_gui.py`)**
+---------------------------------------------
+
+
+1️⃣ **Install Python (if not installed)**  
+   - Download from: 🔗 https://www.python.org/downloads/  
+   - 📌 **During installation, check "Add Python to PATH"**  
+
+2️⃣ **Install Required Dependencies**  
+   Open **Command Prompt (cmd)** and run:  
+
+pip install -r src/requirements.txt  
+
+
+3️⃣ **Run the GUI Python Script**  
+python src/system_info_gui.py
+
+- A GUI will open where you can click **"Generate Report"**  
+- Reports will be saved in TXT & PDF format  
+
+
+🔹 **OPTION 3: Running the EXE Version (No Python Needed)**
+---------------------------------------------
+1️⃣ **Download the EXE File**  
+- Go to the **GitHub Releases** section.  
+- Download `system_info_tool.exe`  
+
+2️⃣ **Double-click `system_info_tool.exe`**  
+- A GUI will open where you can generate reports.
+
+✅ **This is the easiest method for non-developers!**  
+
+=============================================
+📌 ADDITIONAL INFORMATION
+=============================================
+
+📌 **Where are the reports saved?**
+- **Batch Script Output** → `C:\system_info.txt`
+- **Python GUI Output** → `C:\system_info_<timestamp>.txt & .pdf`
+- **Battery Report (Laptops Only)** → `C:\battery_report_<timestamp>.html`
+
+📌 **Troubleshooting**
+❌ **"pip is not recognized as an internal command"**  
+✔ **Solution:** Reinstall Python and check "Add to PATH" during installation.  
+
+❌ **"ModuleNotFoundError: No module named 'fpdf'"**  
+✔ **Solution:** Run:
+pip install fpdf
+
+
+
+❌ **"system_info_tool.exe is not opening"**  
+✔ **Solution:** Try running as **Administrator**.  
+
+
+=============================================
+📌 LICENSE & CREDITS
+=============================================
+🔹 **License**: MIT License  
+🔹 **Author**: [SUMIT RAJAK]  
+🔹 **GitHub Repo**: https://github.com/SUMIT030810/System-Info-Tool 
